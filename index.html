@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven Groups</title>
+    <!-- Favicon link-->
+    <link rel="icon" type="image/x-icon" href="assets/img/fav-icon.png">
+
+    <!-- Slick-Carousel CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/272a6bdf68.js" crossorigin="anonymous"></script>
+    <!-- Vendors Css Files -->
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="navigation">
+                <a href="index.html" class="logo-img"><img src="assets/img/main-logo.png" alt="logo"></a>
+                <ul id="mymenu" class="menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">For Land Owners</a></li>
+                    <li><a href="#">Ongoing Projects</a></li>
+                    <li><a href="#">Completed Projects</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#" class="menu-btn">Sign In</a></li>
+                </ul>
+                <a href="javascript:void(0);" id="mobile" onclick="OpenNav(this)"><i class="fas fa-bars" id="mobile-menu"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header End-->
+    <!-- Options -->
+    <section class="option">
+        <div class="container">
+            <form action="">
+                <select name="" id="property">
+                    <option value="Property Type">Property Type</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Plot">Plot</option>
+                    <option value="Commercial">Commercial</option>
+                </select>
+                <select name="" id="location">
+                    <option value="location">Location</option>
+                    <option value="Alberta">Alberta</option>
+                    <option value="British Columbia">British Columbia</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="Nova Scotia">Nova Scotia</option>
+                    <option value="Ontario">Ontario</option>
+                </select>
+                <select name="" id="budget">
+                    <option value="Property Type">Budget</option>
+                    <option value="Apartment">$1000 - $2000</option>
+                    <option value="Apartment">$2000 - $3000</option>
+                    <option value="Apartment">$3000 - $4000</option>
+                    <option value="Apartment">$4000 - $5000</option>
+                    <option value="Apartment">$5000 - $6000</option>
+                    <option value="Apartment">$6000 - above</option>
+
+                </select>
+                <a href="#" class="search-btn">Search</a>
+            </form>
+        </div>
+    </section>
+
+    <!-- Options End-->
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="content">
+                    <h1>Land in Ogden Valley</h1>
+                    <p>We can help you find the perfect plot of land in Ogden Valley for your dream home or investment
+                        property.</p>
+                    <a href="#" class="hero-btn">View Property</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero End-->
+    <!-- Services -->
+    <section class="service">
+        <div class="container">
+            <div class="service-boxes">
+                <div class="box">
+                    <img src="assets/img/property-red.png" style="width: 60px;" alt="">
+                    <div class="box-text">
+                        <h3>Wide Range of Properties</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae
+                            dolorum neque.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/img/sale-red.png" style="width: 60px;" alt="">
+                    <div class="box-text">
+                        <h3>Rent For Sale</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae
+                            dolorum neque.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/img/location-red.png" style="width: 60px;" alt="">
+                    <div class="box-text">
+                        <h3>Property Location</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae
+                            dolorum neque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services End -->
+    <!--First Carousel -->
+    <section class="property">
+        <div class="container">
+            <h1 class="text-center main-title">Latest & Featured Properties</h1>
+            <!-- Slick-Carousel -->
+            <div class="responsive">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/img/gallery/property1.jpg" alt="">
+                        <span class="img-tag">SALE</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h1>Central Park View</h1>
+                            <span class="title-tag">Office</span>
+                        </div>
+
+                        <div class="card-text">
+                            <small>853 S Lucerne Blvd,</small>
+                            <div>
+                                <small>Los Angeles, CA 90005</small>
+                                <small>Area : 65000/m2</small>
+                            </div>
+                        </div>
+
+                        <a href="#" class="card-btn">View Details</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/img/gallery/property1.jpg" alt="">
+                        <span class="img-tag">SALE</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h1>Central Park View</h1>
+                            <span class="title-tag">Office</span>
+                        </div>
+
+                        <div class="card-text">
+                            <small>853 S Lucerne Blvd,</small>
+                            <div>
+                                <small>Los Angeles, CA 90005</small>
+                                <small>Area : 65000/m2</small>
+                            </div>
+                        </div>
+
+                        <a href="#" class="card-btn">View Details</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/img/gallery/property2.jpg" alt="">
+                        <span class="img-tag">SALE</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h1>Central Park View</h1>
+                            <span class="title-tag">Office</span>
+                        </div>
+
+                        <div class="card-text">
+                            <small>853 S Lucerne Blvd,</small>
+                            <div>
+                                <small>Los Angeles, CA 90005</small>
+                                <small>Area : 65000/m2</small>
+                            </div>
+                        </div>
+
+                        <a href="#" class="card-btn">View Details</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/img/gallery/property3.jpg" alt="">
+                        <span class="img-tag">SALE</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h1>Central Park View</h1>
+                            <span class="title-tag">Office</span>
+                        </div>
+
+                        <div class="card-text">
+                            <small>853 S Lucerne Blvd,</small>
+                            <div>
+                                <small>Los Angeles, CA 90005</small>
+                                <small>Area : 65000/m2</small>
+                            </div>
+                        </div>
+
+                        <a href="#" class="card-btn">View Details</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!--First Carousel End-->
+<!-- CTA -->
+
+<section class="cta">
+<div class="container">
+    <h1 class="text-center main-title-2">How we help people?</h1>
+    <div class="cta-container">
+        <div class="cta-box">
+            <img src="assets/img/sell.png" style="width:60px;" alt="">
+            <h3>Sell home or office</h3>
+            <p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+        </div>
+        <div class="cta-box">
+            <img src="assets/img/rent.png" style="width:60px;" alt="">
+            <h3>Rent Home or Office</h3>
+            <p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+        </div>
+        <div class="cta-box">
+            <img src="assets/img/find.png" style="width:60px;" alt="">
+            <h3>Find Next</h3>
+            <p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- CTA End-->
+<!-- Property2 -->
+<section class="property-2">
+    <div class="container">
+        <h1 class="text-center main-title">Properties For Sale</h1>
+        <!-- Slick-Carousel -->
+        <div class="responsive">
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/img/gallery/property1.jpg" alt="">
+                    <span class="img-tag">Apartment</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h1>The Urban Life</h1>
+                       
+                    </div>
+
+                    <div class="card-text">
+                        <small>853 S Lucerne Blvd,</small>
+                        <div>
+                            <small>Los Angeles, CA 90005</small>
+                            <small>Area : 65000/m2</small>
+                        </div>
+                    </div>
+
+                    <a href="#" class="card-btn">View Details</a>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/img/gallery/property2.jpg" alt="">
+                    <span class="img-tag">Farm House</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h1>William Buildings</h1>
+                       
+                    </div>
+
+                    <div class="card-text">
+                        <small>853 S Lucerne Blvd,</small>
+                        <div>
+                            <small>Los Angeles, CA 90005</small>
+                            <small>Area : 65000/m2</small>
+                        </div>
+                    </div>
+
+                    <a href="#" class="card-btn">View Details</a>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/img/gallery/property3.jpg" alt="">
+                    <span class="img-tag">Office</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h1>House On The Beach</h1>
+                       
+                    </div>
+
+                    <div class="card-text">
+                        <small>853 S Lucerne Blvd,</small>
+                        <div>
+                            <small>Los Angeles, CA 90005</small>
+                            <small>Area : 65000/m2</small>
+                        </div>
+                    </div>
+
+                    <a href="#" class="card-btn">View Details</a>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/img/gallery/property1.jpg" alt="">
+                    <span class="img-tag">Commercial</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h1>Central Park View</h1>
+                       
+                    </div>
+
+                    <div class="card-text">
+                        <small>853 S Lucerne Blvd,</small>
+                        <div>
+                            <small>Los Angeles, CA 90005</small>
+                            <small>Area : 65000/m2</small>
+                        </div>
+                    </div>
+
+                    <a href="#" class="card-btn">View Details</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+</section>
+
+
+<!-- Property2 End-->
+<!-- Testimonials-->
+<section class="Testimonials">
+<div class="container">
+    <h1 class="text-center main-title">Testimonials</h1>
+    <div class="responsive-2">
+        <div class="single-card">
+         <img src="assets/img/Testimonials/our-team-1.jpg" alt="">
+         <p>We thank you sincerely for your excellent facilitation and systematic support for the purchase of the property</p>
+         <h4>Dr. Liam William</h4>
+         <small>Real Estate Agent</small>   
+        </div>
+        <div class="single-card">
+            <img src="assets/img/Testimonials/our-team-2.jpg" alt="">
+            <p>We thank you sincerely for your excellent facilitation and systematic support for the purchase of the property</p>
+            <h4>Dr. Liam William</h4>
+            <small>Real Estate Agent</small>   
+           </div>
+           <div class="single-card">
+            <img src="assets/img/Testimonials/our-team-4.jpg" alt="">
+            <p>We thank you sincerely for your excellent facilitation and systematic support for the purchase of the property</p>
+            <h4>Dr. Liam William</h4>
+            <small>Real Estate Agent</small>   
+           </div>
+           <div class="single-card">
+            <img src="assets/img/Testimonials/our-team-2.jpg" alt="">
+            <p>We thank you sincerely for your excellent facilitation and systematic support for the purchase of the property</p>
+            <h4>Dr. Liam William</h4>
+            <small>Real Estate Agent</small>   
+           </div>
+           <div class="single-card">
+            <img src="assets/img/Testimonials/our-team-1.jpg" alt="">
+            <p>We thank you sincerely for your excellent facilitation and systematic support for the purchase of the property</p>
+            <h4>Dr. Liam William</h4>
+            <small>Real Estate Agent</small>   
+           </div>
+           <div class="single-card">
+            <img src="assets/img/Testimonials/our-team-4.jpg" alt="">
+            <p>We thank you sincerely for your excellent facilitation and systematic support for the purchase of the property</p>
+            <h4>Dr. Liam William</h4>
+            <small>Real Estate Agent</small>   
+           </div>
+    </div>
+</div>
+</section>
+
+
+<!-- Testimonials End-->
+<!-- Blog -->
+<section class="blog">
+<div class="container">
+    <h1 class="text-center blog-title">Our Blog</h1>
+    <div class="blog-container">
+        <div class="blogs">
+            <div class="blog-img-container">
+                <img src="assets/img/blog1.jpg" alt="">
+            </div>
+            <div class="blog-content">
+                <small>JAN 20TH, 2022</small>
+                <h2>When To Sell & How Much To Sell?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt</p>
+            </div>
+        </div>
+        <div class="blogs">
+            <div class="blog-img-container">
+                <img src="assets/img/blog2.jpg" alt="">
+            </div>
+            <div class="blog-content">
+                <small>JAN 20TH, 2022</small>
+                <h2>When To Sell & How Much To Sell?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt</p>
+            </div>
+        </div>
+        <div class="blogs">
+            <div class="blog-img-container">
+                <img src="assets/img/blog3.jpg" alt="">
+            </div>
+            <div class="blog-content">
+                <small>JAN 20TH, 2022</small>
+                <h2>When To Sell & How Much To Sell?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Blog End-->
+<!-- Customers -->
+<section class="customer">
+<div class="container">
+    <h1 class="text-center customer-title">Reliable Customers</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+    <div class="responsive-3">
+        <div><img src="assets/img/logo-1.png" style="width:200px;" alt=""></div>
+        <div><img src="assets/img/logo-2.png" style="width:200px;" alt=""></div>
+        <div><img src="assets/img/logo-1.png" style="width:200px;" alt=""></div>
+        <div><img src="assets/img/logo-1.png" style="width:200px;" alt=""></div>
+        <div><img src="assets/img/logo-2.png" style="width:200px;" alt=""></div>
+        <div><img src="assets/img/logo-2.png" style="width:200px;" alt=""></div>
+    </div>
+</div>
+</section>
+<!-- Customers End-->
+<!-- Newsletter -->
+<section class="newsletter">
+
+    <div class="sides">
+        <div class="left">
+            <h1>Subscribe Newsletters</h1>
+            <p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+            <form action="">
+                <input type="text" class="newsletter-input" placeholder="Enter Your Email">
+                <a href="#" class="newsletter-btn">Subscribe</a>
+            </form>
+        </div>
+      <img src="assets/img/newsletter-img.jpg" alt="">
+    </div>
+
+</section>
+
+<!-- Newsletter End-->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-columns">
+            <div class="info-column">
+                <img src="assets/img/main-logo-black.png" style="width:250px;" alt="">
+                <p>Duis aute irure dolor inasfa reprehenderit in voluptate velit esse cillum</p>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="navigation-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="useful-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">404 Error</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Property</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="resource-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                 
+                </ul>
+            </div>
+            <div class="contact-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="mailto:contact@example.com">contact@example.com</a></li>
+                    <li><a href="tel:+123-4567-890">+123-4567-890</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-2"><p class="text-center">Copyright ©2022 All rights reserved</p></div>
+
+</footer>
+
+
+<!-- Footer End-->
+
+
+
+       <!-- Jquery CDN -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Slick-Carousel Js CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+    <!-- Main Js File -->
+    <script src="assets/js/app.js"></script>
+  
+</body>
+
+</html>
