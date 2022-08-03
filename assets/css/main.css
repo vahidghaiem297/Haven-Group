@@ -908,6 +908,12 @@ margin-top: 1rem;
     .why-us-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .newsletter .sides{
+        grid-template-columns: 1fr;
+    }
+    .newsletter .left{
+        padding-bottom: 2.5rem !important;
+    }
 }
 
 
