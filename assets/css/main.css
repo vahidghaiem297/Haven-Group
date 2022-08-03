@@ -410,16 +410,20 @@ header{
 .blog-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
 }
 .blog .blogs .blog-img-container{
     position: relative;
     overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .blog .blogs .blog-img-container img:hover{
 transform: scale(2);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
 }
 .blog .blogs .blog-img-container img{
     transition: 0.6s ease-in-out;
@@ -806,6 +810,7 @@ margin-top: 1rem;
     .service .service-boxes{
         grid-template-columns: 1fr;
     }
+   
     .cta .cta-container{
         grid-template-columns: 1fr;
     }
@@ -865,6 +870,17 @@ margin-top: 1rem;
         grid-column: 1 / span 3;
     
     }
+    .hero .hero-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+  
+    .hero .hero-content h1{
+        font-size: 2.5rem !important;
+    }
+    .cta .cta-container{
+        grid-template-columns: 1fr;
+    }
     .navigation .menu.responsive li a{
         text-align: center;
         padding: 1rem 0;
@@ -890,6 +906,9 @@ margin-top: 1rem;
         display: block !important;
         text-align: right; 
     }
+    .service .service-boxes{
+       grid-template-columns: 1fr;
+    }
     .menu-btn{
         padding: 1rem !important;
     }
@@ -905,6 +924,12 @@ margin-top: 1rem;
     .honor-box{
         text-align: center;
     }
+    .blog-container{
+        grid-template-columns: 1fr;
+    }
+    .blog-container img{
+        object-fit: cover;
+    }
     .why-us-container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -913,6 +938,22 @@ margin-top: 1rem;
     }
     .newsletter .left{
         padding-bottom: 2.5rem !important;
+    }
+    .newsletter .sides .left p{
+        text-align: left;
+    }
+    .footer-columns{
+        grid-template-columns: 1fr;
+    }
+    .info-column img{
+        display: block;
+        margin: auto;
+    }
+    .info-column p{
+        text-align: center !important;
+    }
+    .info-column ul{
+        justify-content: center;
     }
 }
 
