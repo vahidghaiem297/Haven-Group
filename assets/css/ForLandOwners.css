@@ -145,11 +145,20 @@ form #extent{
         height: 100%;
         overflow-y: auto;
     }
+    .form-btn{
+        justify-self: self-start;
+    }
+    .back-btn{
+        justify-self: self-end;
+    }
    
  }
  @media(max-width:360px){
     .form-btn{
-        justify-self: end;
+        justify-self: self-end;
+    }
+    .back-btn{
+        justify-self: self-start;
     }
     form{
         padding: 0;
