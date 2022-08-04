@@ -749,6 +749,83 @@ margin-top: 1rem;
 
 }
 /* Why-Us End*/
+/*Ongoing Projects */
+.projects-title{
+    display: flex;
+    align-items: center;
+}
+.projects-title h1{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.projects-title small{
+    font-size: .6rem;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 1rem;
+    background-color: var(--dark-button);
+    color: #FFFFFF;
+    border-radius:5px;
+    padding:.3rem;
+}
+.project-image-boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+.projects-img{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.projects-img::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(20,20,20,0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.projects-img img{
+    border-radius: 5px;
+    height: 100%;
+}
+.project-content{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #FFFFFF;
+    z-index: 2;
+}
+/*Ongoing Projects End*/
+/* Featured Projects */
+.featured-title{
+    margin: 5rem 0 3rem 0;
+    font-weight: 500;
+}
+.featured_projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+.featured_projects-container .card{
+    box-shadow: 2px 2px 6px #444;
+    border-radius: 8px !important;
+}
+.featured_projects-container .card .card-img{
+    margin: 0;
+    border-radius: 8px;
+}
+
+
+/* Featured Projects End*/
+
 
 
 /* SmartPhones*/
@@ -846,6 +923,12 @@ margin-top: 1rem;
         text-align: center;
     }
     .why-us-container{
+        grid-template-columns: 1fr;
+    }
+    .project-image-boxes{
+        grid-template-columns: 1fr;
+    }
+    .featured_projects-container{
         grid-template-columns: 1fr;
     }
 }
@@ -954,6 +1037,12 @@ margin-top: 1rem;
     }
     .info-column ul{
         justify-content: center;
+    }
+    .project-image-boxes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featured_projects-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
