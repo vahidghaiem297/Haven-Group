@@ -15,7 +15,7 @@
 body,html{
     overflow-x: hidden;
     background-color: #FFFFFF;
-   
+   scroll-behavior: smooth !important;
 }
 p{
     text-align: justify;
