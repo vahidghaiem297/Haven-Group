@@ -14,14 +14,13 @@ function OpenNav(element) {
 }
 $(document).ready(function(){
 $(window).scroll(function(){
-if (window.scrollY > 200) {
+if (window.scrollY > 100) {
     $('#header').addClass("sticky");
 }else{
     $('#header').removeClass("sticky");
 }
 });
 });
-        $('#header').addClass("sticky");
 
 
 
