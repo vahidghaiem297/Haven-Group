@@ -825,6 +825,94 @@ margin-top: 1rem;
 
 
 /* Featured Projects End*/
+/* Contact */
+.contact-sides{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin:5rem 0;
+}
+.contact-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.contact-form h1{
+    font-weight: 500;
+}
+.title-line{
+    border-top: 3px solid var(--dark-button);
+    margin:.5rem 0 2rem 0;
+    padding: 0;
+    width: 3rem;
+}
+.contact-form form input::placeholder,.contact-form form textarea::placeholder{
+    font-size: 1rem;
+    color: gray;
+}
+.contact-form form label{
+    font-size: 1rem;
+    color: #888;
+}
+.contact-form form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.contact-form form input,textarea{
+    padding: 1rem;
+    border:none;
+    background-color: #eee;
+}
+.contact-form form #name{
+    grid-column: 1 / span 1;
+}
+.contact-form form #email_label{
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.contact-form form #email{
+    grid-column: 2 / span 1;
+}
+.contact-form form #subject{
+    grid-column: 1 / span 2;
+}
+.contact-form form #message{
+    grid-column: 1 / span 2;
+}
+.contact-info h4{
+    padding: 1rem;
+    font-size: 1rem;
+    color: #444;
+}
+.contact-info p{
+    color: #666;
+    font-size: 1rem;
+}
+.contact-info-paragraph{
+    margin-top: 3rem;
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+}
+.email-us{
+    color: var(--dark-button);
+    margin-top: 2rem;
+    display: inline-block;
+}
+.contact-form-btn{
+    background-color: #0C1B33;
+    color: #FFFFFF;
+    text-align: center;
+    width: 140px;
+    padding: .8rem;
+    border-radius: 8px;
+    font-size: .89rem;
+    font-weight: lighter;
+}
+/* Contact End*/
+
+
+
 
 
 
