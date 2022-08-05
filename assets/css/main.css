@@ -16,6 +16,7 @@ body,html{
     overflow-x: hidden;
     background-color: #FFFFFF;
    scroll-behavior: smooth !important;
+
 }
 p{
     text-align: justify;
@@ -912,8 +913,83 @@ margin-top: 1rem;
 }
 /* Contact End*/
 
+/* Privacy Policy */
+.italic-p{
+    font-weight: bolder !important;
+    font-size: 1rem !important;
+    font-style: italic;
+    color: #333 !important;
+    padding: 1.5rem 0;
+}
+.privacy p{
+text-align: left;
+line-height: 32px;
+color: #777;
+font-size: .91rem;
+font-weight: lighter !important;
+padding: 1rem 0;
+}
+.privacy p:last-child{
+    margin-bottom: 3rem;
+}
+.privacy p a{
+    color: var(--dark-button);
+    font-weight: 800;
+}
 
-
+/* Privacy Policy End*/
+/* Terms */
+.countbox-1{
+    counter-reset:my-counter-1;
+}
+.countbox-2{
+    counter-reset:my-counter-2;
+}
+.countbox-1 p::before{
+counter-increment:my-counter-1;
+content: counter(my-counter-1)" . ";
+}
+.countbox-2 p::before{
+    counter-increment:my-counter-2;
+content: counter(my-counter-2)" . ";
+}
+.countbox-3{
+    counter-reset:my-counter-3;
+}
+.countbox-3 p::before{
+    counter-increment:my-counter-3;
+content: counter(my-counter-3)" . ";
+}
+.term-title{
+    font-size: 2rem;
+}
+.term h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #0C1B33;
+    padding-bottom: 1rem;
+}
+.term p{
+    text-align: left;
+    padding: 1rem 0;
+    color: #777;
+    font-size: .9rem;
+    font-weight: 100;
+}
+.countbox-1 p,
+.countbox-2 p,
+.countbox-3 p{
+    padding: 0;
+}
+.term p a{
+    color: var(--dark-button);
+    font-weight: 800;
+    
+}
+.term p:last-child{
+    margin-bottom: 3rem;
+}
+/* Terms End*/
 
 
 
