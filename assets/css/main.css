@@ -888,6 +888,7 @@ margin-top: 1rem;
 .contact-info p{
     color: #666;
     font-size: 1rem;
+    text-align: left;
 }
 .contact-info-paragraph{
     margin-top: 3rem;
@@ -1019,6 +1020,37 @@ margin-top: 1rem;
     .featured_projects-container{
         grid-template-columns: 1fr;
     }
+
+    .contact-sides{
+        grid-template-columns: 1fr;
+    }
+    .contact-form form{
+        grid-template-columns: 1fr;
+    }
+    .contact-form form #name{
+        grid-column: 1;
+    }
+    .contact-form form #email_label{
+        grid-row: 3;
+        grid-column:1;
+    }
+    
+    .contact-form form #email{
+        grid-column:1;
+    }
+    .contact-form form #subject{
+        grid-column: 1;
+    }
+    .contact-form form #message{
+        grid-column: 1;
+    }
+    .contact-info h4{
+        padding-left: 0;
+    }
+    .contact-info-paragraph{
+        font-size: 0.9rem !important;
+        text-align: left;
+    }
 }
 
 
@@ -1131,6 +1163,36 @@ margin-top: 1rem;
     }
     .featured_projects-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-sides{
+        grid-template-columns: 1fr;
+    }
+    .contact-form form{
+        grid-template-columns: 1fr;
+    }
+    .contact-form form #name{
+        grid-column: 1;
+    }
+    .contact-form form #email_label{
+        grid-row: 3;
+        grid-column:1;
+    }
+    
+    .contact-form form #email{
+        grid-column:1;
+    }
+    .contact-form form #subject{
+        grid-column: 1;
+    }
+    .contact-form form #message{
+        grid-column: 1;
+    }
+    .contact-info h4{
+        padding-left: 0;
+    }
+    .contact-info-paragraph{
+        font-size: 0.9rem !important;
+        text-align: left;
     }
 }
 
